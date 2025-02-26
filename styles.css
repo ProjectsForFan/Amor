@@ -1,0 +1,155 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #ffb6c1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff1493;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #ff1493;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.heart {
+    color: #ff1493;
+    font-size: 1.5em;
+}
+
+.music-player {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+    text-align: center;
+}
+
+.player-container {
+    margin: 20px 0;
+}
+
+.player-container audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+.song-caption {
+    font-style: italic;
+    color: #666;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.photo-frame {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.photo-frame:hover {
+    transform: scale(1.05);
+}
+
+.photo-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.memories {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.memories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.memories li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.memories li:before {
+    content: "♥";
+    color: #ff1493;
+    position: absolute;
+    left: 0;
+}
+
+.special-message {
+    background-color: #ffb6c1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .photo-frame {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .player-container audio {
+        width: 100%;
+    }
+}
